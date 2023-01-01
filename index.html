@@ -1,0 +1,161 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <center>
+        <ol>
+            <div class="test_image_result xs-col-12">
+                <li>
+                <b>Test Image-</b>
+                <img src="https://www.sibconline.com.sb/wp-content/uploads/2015/01/Soccer-ball.jpg" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Soccer Ball</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Soccer Ball</span>
+                    </h5>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                    <img src="https://th.bing.com/th/id/OIP.NLX_Waq4DY1wK1vkQvnimAHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Nike Sneakers</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Shoes</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://www.gea.com/en/binaries/pizza-slice_tcm11-39721.jpg" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Pizza By The Slice</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Jigsaw Puzzle</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://th.bing.com/th/id/OIP.mROz-2WBigNsApwD5HOCbwHaEp?pid=ImgDet&rs=1" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Oppo Find X</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Remote Control, Remote</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://jooinn.com/images/opened-book-4.jpg" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Pirate Journal</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Lampshade</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://th.bing.com/th/id/R.e96429242e7b9e7c8ec137d4a0832945?rik=%2b6NZCCeAWj1cUQ&pid=ImgRaw&r=0" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Golden Retriever</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Hard Disk</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://th.bing.com/th/id/R.1228db25925c4ec58eaf8b0cdd1c86a9?rik=3JNAjNq4ovRNMQ&riu=http%3a%2f%2fwww.bombadillokittens.com%2fsites%2fdefault%2ffiles%2f2018-06%2fagressive_cat.jpg&ehk=GtYpPvct7HRjG6vABUw%2fvATfZbaDsBU5fpdYL2y0tFU%3d&risl=&pid=ImgRaw&r=0" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Tabby Cat</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Tabby Cat</span>
+                    </h5>
+                <br>
+                <br>
+                <br>
+                <img src="https://th.bing.com/th/id/R.6eb35a879d466a1713600654af213ad8?rik=cNYTh60lx2LyNg&pid=ImgRaw&r=0" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Sea Turtle</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Violin, Fiddle</span>
+                    </h5>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="https://www.huwmerriman.org.uk/sites/www.huwmerriman.org.uk/files/2017-02/Elephant.jpg" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>African Bush Elephant</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Microphone</span>
+                    </h5>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="https://th.bing.com/th/id/R.6bc0063790223360a4d61fc98cedad8f?rik=OCAGaZA8kan3eA&pid=ImgRaw&r=0" class="img-responsive" id="img">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>Google Lens</b>-
+                <span>Blue Jay</span>
+                </h5>
+                <br>
+                <br><br>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet Model</b>-
+                    <span>Jay</span>
+                    </h5>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <div class="mini-result" class="col-xs-12">
+                    <h4>Result- Google Lens is more accurate than MoblieNet Model because Google Lens got 4/5 correct but MobileNet Model got 1/5 correct.</h4>
+                    <hr>
+                </div>
+            </div>
+        </ol>
+    </center>
+  </body>
+  </html>
